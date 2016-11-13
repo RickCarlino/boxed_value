@@ -11,7 +11,11 @@ Usually this happens when you are parsing serialized data that entered the appli
 
 If you've used lodash functions like `_.isArray()` or `_.isBoolean()`, this is sort of the same thing, but hyper focused on TypeScript.
 
-Here's an example:
+Here's an example of why it's going to make life easier:
+
+![example](screenshot.png)
+
+Here's another example:
 
 ```typescript
 
@@ -57,3 +61,7 @@ y.value = 3;
 x.value === 3; // True, because objects are pass by refernce in JS.
 
 ```
+
+# Contributing
+
+This is a very new project. Please submit issues for any bugs you may find while using the module.
