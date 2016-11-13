@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A library for boxed values in typescript.",
   "scripts": {
-    "start": "rm -rf build/; tsc --outDir ./build"
+    "start": "rm -rf build/; tsc"
   },
   "repository": {
     "type": "git",
