@@ -2,6 +2,12 @@
 
 An NPM module to bring certainty to uncertain types.
 
+## Installation
+
+```
+npm install boxed_value --save
+```
+
 ## Why?
 
 You use typescript because it provides compile time type safety.
@@ -41,7 +47,6 @@ switch (boxed.kind) {
 }
 sw
 ```
-
 ## Other Problems Solved
 
 Boxed values can provide mutability to values that would otherwise be immutable.
@@ -59,6 +64,21 @@ var x = box(2);
 var y = x;
 y.value = 3;
 x.value === 3; // True, because objects are pass by refernce in JS.
+
+```
+
+## The "box" Type
+
+When you `box()` a value, it will be wrapped in a box type.
+
+Box types only have two proprties: `value` and `kind`. The `value` is the data you put in the box. The `kind` is a string representation of what data type is contained in the box.
+
+```typescript
+
+import { box } from "boxed_value";
+let x = box(5);
+x.kind; // "number"
+x.value; // 5
 
 ```
 
