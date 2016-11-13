@@ -9,6 +9,8 @@ You use typescript because it provides compile time type safety.
 Sometimes you find yourself needing type safety *after* compile time.
 Usually this happens when you are parsing serialized data that entered the application after compile time (Parsing API responses, processing unstructured JSON data, etc..)  
 
+If you've used lodash functions like `_.isArray()` or `_.isBoolean()`, this is sort of the same thing, but hyper focused on TypeScript.
+
 Here's an example:
 
 ```typescript
